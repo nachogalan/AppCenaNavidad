@@ -1,36 +1,36 @@
 //
-//  MainViewController.swift
+//  GuestsViewController.swift
 //  CenaNavidad
 //
-//  Created by IGNACIO GALAN DE PINA on 9/1/19.
+//  Created by IGNACIO GALAN DE PINA on 10/1/19.
 //  Copyright © 2019 IGNACIO GALAN DE PINA. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class GuestsViewController: UIViewController {
     
-    internal var dinners:[Dinner] = []
     @IBOutlet weak var tableView: UITableView!
-    internal var repository = LocalDinnerRepository()
-    
+    internal var guests:[Guest] = []
+    internal var repository = LocalGuestRepository()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Pagina Principal"
         registerCells()
-        dinners = repository.getAll()
-        
+        guests = repository.getAll()
+        title = "Participantes"
+        // Do any additional setup after loading the view.
         
         let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPressed))
         navigationItem.setRightBarButton(addBarButtonItem, animated: false)
     }
     
     @objc internal func addPressed() {
-        let addVC = AddViewController(dinner: nil)
-        addVC.delegate = self
-        addVC.modalTransitionStyle = .coverVertical
-        addVC.modalPresentationStyle = .overCurrentContext
-        present(addVC, animated: true, completion: nil)
+        let addGuestVC = AddGuestViewController(guest: nil)
+        addGuestVC.delegate = self
+        addGuestVC.modalTransitionStyle = .coverVertical
+        addGuestVC.modalPresentationStyle = .overCurrentContext
+        present(addGuestVC, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,8 +39,8 @@ class MainViewController: UIViewController {
     }
     
     internal func registerCells(){
-        let nib = UINib(nibName: "DinnerTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "DinnerTableViewCell")
+        let nib = UINib(nibName: "GuestTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "GuestTableViewCell")
     }
 
     /*
@@ -55,26 +55,26 @@ class MainViewController: UIViewController {
 
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource{
+extension GuestsViewController: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dinners.count
+        return guests.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: DinnerTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DinnerTableViewCell", for: indexPath) as! DinnerTableViewCell
-        let dinner = dinners[indexPath.row]
-        cell.lblName.text = dinner.name
+        let cell: GuestTableViewCell = tableView.dequeueReusableCell(withIdentifier: "GuestTableViewCell", for: indexPath) as! GuestTableViewCell
+        let guest = guests[indexPath.row]
+        cell.lblGuestName.text = guest.name
         return cell
-    }
+}
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let dinner = dinners[indexPath.row]
-            if repository.delete(a: dinner){
-                dinners.remove(at: indexPath.row)
+            let guest = guests[indexPath.row]
+            if repository.delete(a: guest){
+                guests.remove(at: indexPath.row)
                 tableView.beginUpdates()
                 tableView.deleteRows(at: [indexPath], with: .automatic)
                 tableView.endUpdates()
@@ -82,23 +82,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
             }
         }
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dinner = dinners[indexPath.row]
-        let interVC = InterViewController(guests: dinner.guests, dishes: dinner.dishes)
-        
-        navigationController?.pushViewController(interVC, animated: true)
-        
-    }
-    
-    
 }
 
-extension MainViewController: AddViewControllerDelegate {
-    func addViewController(_ vc: AddViewController, didEditDinner dinner: Dinner) {
+extension GuestsViewController: AddGuestViewControllerDelegate {
+    func addGuestViewController(_ vc: AddGuestViewController, didEditGuest guest: Guest) {
         vc.dismiss(animated: true, completion: nil)
-        if repository.create(a: dinner) {
-            dinners = repository.getAll()
+        if repository.create(a: guest) {
+            guests = repository.getAll()
             tableView.reloadData()
         }
     }

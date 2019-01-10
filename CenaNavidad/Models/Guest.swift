@@ -9,5 +9,5 @@
 import Foundation
 
 public class Guest{
-    var name: String!
+    var name: String! = ""
 }

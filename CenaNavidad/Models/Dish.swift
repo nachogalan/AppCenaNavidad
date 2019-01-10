@@ -9,5 +9,5 @@
 import Foundation
 
 public class Dish{
-    var name: String!
+    var name: String! = ""
 }

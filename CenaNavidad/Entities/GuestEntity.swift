@@ -18,14 +18,14 @@ class GuestEntity: Object {
         return "name"
     }
     
-    convenience init(guest: GuestEntity) {
+    convenience init(guest: Guest) {
         self.init()
         
         self.name = guest.name
         
     }
     
-    func taskModel() -> Guest {
+    func guestModel() -> Guest {
         let model = Guest()
         
         model.name = self.name

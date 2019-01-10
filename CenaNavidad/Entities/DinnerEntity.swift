@@ -14,24 +14,24 @@ class DinnerEntity: Object {
     @objc dynamic var name = ""
     @objc dynamic var place = ""
     @objc dynamic var date = Date()
-    @objc dynamic var guests:[GuestEntity] = []
+    var guests:[Guest] = []
     
     
     override static func primaryKey() -> String { //Metodo para asignar una clave primaria
         return "name"
     }
     
-    convenience init(dinner: DinnerEntity) {
+    convenience init(dinner: Dinner) {
         self.init()
         
         self.name = dinner.name
-        self.place = dinner.place
-        self.date = dinner.date
-        self.guests = dinner.guests
+       // self.place = dinner.place
+        //self.date = dinner.date
+       // self.guests.append(guests)
         
     }
     
-    func taskModel() -> Dinner {
+    func dinnerModel() -> Dinner {
         let model = Dinner()
         
         model.name = self.name

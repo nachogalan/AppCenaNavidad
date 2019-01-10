@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3BC534A648828771EF6F09E2 /* Pods_CenaNavidad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BC1E1825B9BC60FFA832D8 /* Pods_CenaNavidad.framework */; };
+		4DA7F49821E7982300F18CB4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F49721E7982300F18CB4 /* Repository.swift */; };
+		4DA7F49A21E7987500F18CB4 /* LocalDinnerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F49921E7987500F18CB4 /* LocalDinnerRepository.swift */; };
+		4DA7F4A221E79F4F00F18CB4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F4A021E79F4F00F18CB4 /* AddViewController.swift */; };
+		4DA7F4A321E79F4F00F18CB4 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7F4A121E79F4F00F18CB4 /* AddViewController.xib */; };
+		4DA7F4A721E7AE4F00F18CB4 /* InterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F4A521E7AE4F00F18CB4 /* InterViewController.swift */; };
+		4DA7F4A821E7AE4F00F18CB4 /* InterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7F4A621E7AE4F00F18CB4 /* InterViewController.xib */; };
+		4DA7F4AD21E7B52400F18CB4 /* GuestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F4AB21E7B52400F18CB4 /* GuestsViewController.swift */; };
+		4DA7F4AE21E7B52400F18CB4 /* GuestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7F4AC21E7B52400F18CB4 /* GuestsViewController.xib */; };
+		4DA7F4B521E7B77E00F18CB4 /* LocalGuestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F4B421E7B77E00F18CB4 /* LocalGuestRepository.swift */; };
+		4DA7F4B921E7BD2B00F18CB4 /* AddGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F4B721E7BD2B00F18CB4 /* AddGuestViewController.swift */; };
+		4DA7F4BA21E7BD2B00F18CB4 /* AddGuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7F4B821E7BD2B00F18CB4 /* AddGuestViewController.xib */; };
+		4DA7F4BF21E7C70B00F18CB4 /* GuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F4BD21E7C70B00F18CB4 /* GuestTableViewCell.swift */; };
+		4DA7F4C021E7C70B00F18CB4 /* GuestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7F4BE21E7C70B00F18CB4 /* GuestTableViewCell.xib */; };
 		4DE1BAFD21E6587D00ABEB6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE1BAFC21E6587D00ABEB6D /* AppDelegate.swift */; };
 		4DE1BB0521E6587D00ABEB6D /* CenaNavidad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DE1BB0321E6587D00ABEB6D /* CenaNavidad.xcdatamodeld */; };
 		4DE1BB0721E6588100ABEB6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1BB0621E6588100ABEB6D /* Assets.xcassets */; };
@@ -26,6 +39,19 @@
 /* Begin PBXFileReference section */
 		10842CF43C47F2AB6B3BE14C /* Pods-CenaNavidad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenaNavidad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CenaNavidad/Pods-CenaNavidad.debug.xcconfig"; sourceTree = "<group>"; };
 		48BC1E1825B9BC60FFA832D8 /* Pods_CenaNavidad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CenaNavidad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA7F49721E7982300F18CB4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4DA7F49921E7987500F18CB4 /* LocalDinnerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDinnerRepository.swift; sourceTree = "<group>"; };
+		4DA7F4A021E79F4F00F18CB4 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddViewController.swift; path = CenaNavidad/ViewControllers/AddViewController.swift; sourceTree = SOURCE_ROOT; };
+		4DA7F4A121E79F4F00F18CB4 /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddViewController.xib; path = CenaNavidad/ViewControllers/AddViewController.xib; sourceTree = SOURCE_ROOT; };
+		4DA7F4A521E7AE4F00F18CB4 /* InterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterViewController.swift; sourceTree = "<group>"; };
+		4DA7F4A621E7AE4F00F18CB4 /* InterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterViewController.xib; sourceTree = "<group>"; };
+		4DA7F4AB21E7B52400F18CB4 /* GuestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestsViewController.swift; sourceTree = "<group>"; };
+		4DA7F4AC21E7B52400F18CB4 /* GuestsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuestsViewController.xib; sourceTree = "<group>"; };
+		4DA7F4B421E7B77E00F18CB4 /* LocalGuestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGuestRepository.swift; sourceTree = "<group>"; };
+		4DA7F4B721E7BD2B00F18CB4 /* AddGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuestViewController.swift; sourceTree = "<group>"; };
+		4DA7F4B821E7BD2B00F18CB4 /* AddGuestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGuestViewController.xib; sourceTree = "<group>"; };
+		4DA7F4BD21E7C70B00F18CB4 /* GuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTableViewCell.swift; sourceTree = "<group>"; };
+		4DA7F4BE21E7C70B00F18CB4 /* GuestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuestTableViewCell.xib; sourceTree = "<group>"; };
 		4DE1BAF921E6587D00ABEB6D /* CenaNavidad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenaNavidad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE1BAFC21E6587D00ABEB6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE1BB0421E6587D00ABEB6D /* CenaNavidad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CenaNavidad.xcdatamodel; sourceTree = "<group>"; };
@@ -56,6 +82,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DA7F49B21E79D1C00F18CB4 /* AddViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DA7F4A021E79F4F00F18CB4 /* AddViewController.swift */,
+				4DA7F4A121E79F4F00F18CB4 /* AddViewController.xib */,
+			);
+			path = AddViewController;
+			sourceTree = "<group>";
+		};
+		4DA7F4A421E7AE2B00F18CB4 /* InterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DA7F4A521E7AE4F00F18CB4 /* InterViewController.swift */,
+				4DA7F4A621E7AE4F00F18CB4 /* InterViewController.xib */,
+			);
+			path = InterViewController;
+			sourceTree = "<group>";
+		};
+		4DA7F4AA21E7AF6B00F18CB4 /* GuestsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DA7F4AB21E7B52400F18CB4 /* GuestsViewController.swift */,
+				4DA7F4AC21E7B52400F18CB4 /* GuestsViewController.xib */,
+			);
+			path = GuestsViewController;
+			sourceTree = "<group>";
+		};
+		4DA7F4AF21E7B5A800F18CB4 /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				4DA7F4BD21E7C70B00F18CB4 /* GuestTableViewCell.swift */,
+				4DA7F4BE21E7C70B00F18CB4 /* GuestTableViewCell.xib */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		4DA7F4B621E7BD0D00F18CB4 /* AddGuestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DA7F4B721E7BD2B00F18CB4 /* AddGuestViewController.swift */,
+				4DA7F4B821E7BD2B00F18CB4 /* AddGuestViewController.xib */,
+			);
+			path = AddGuestViewController;
+			sourceTree = "<group>";
+		};
 		4DE1BAF021E6587D00ABEB6D = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +165,10 @@
 		4DE1BB1121E6591700ABEB6D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7F4B621E7BD0D00F18CB4 /* AddGuestViewController */,
+				4DA7F4AA21E7AF6B00F18CB4 /* GuestsViewController */,
+				4DA7F4A421E7AE2B00F18CB4 /* InterViewController */,
+				4DA7F49B21E79D1C00F18CB4 /* AddViewController */,
 				4DE1BB1521E65A2200ABEB6D /* MainViewController */,
 			);
 			path = ViewControllers;
@@ -102,6 +177,9 @@
 		4DE1BB1221E6592900ABEB6D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7F49721E7982300F18CB4 /* Repository.swift */,
+				4DA7F49921E7987500F18CB4 /* LocalDinnerRepository.swift */,
+				4DA7F4B421E7B77E00F18CB4 /* LocalGuestRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -119,6 +197,7 @@
 		4DE1BB1421E6594100ABEB6D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7F4AF21E7B5A800F18CB4 /* Guest */,
 				4DE1BB2021E65F4700ABEB6D /* Dinner */,
 			);
 			path = Cells;
@@ -228,10 +307,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA7F4A321E79F4F00F18CB4 /* AddViewController.xib in Resources */,
+				4DA7F4C021E7C70B00F18CB4 /* GuestTableViewCell.xib in Resources */,
+				4DA7F4BA21E7BD2B00F18CB4 /* AddGuestViewController.xib in Resources */,
 				4DE1BB0A21E6588100ABEB6D /* LaunchScreen.storyboard in Resources */,
 				4DE1BB1921E65A6100ABEB6D /* MainViewController.xib in Resources */,
+				4DA7F4AE21E7B52400F18CB4 /* GuestsViewController.xib in Resources */,
 				4DE1BB0721E6588100ABEB6D /* Assets.xcassets in Resources */,
 				4DE1BB2421E65F5C00ABEB6D /* DinnerTableViewCell.xib in Resources */,
+				4DA7F4A821E7AE4F00F18CB4 /* InterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +368,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE1BB2921E6686B00ABEB6D /* GuestEntity.swift in Sources */,
+				4DA7F4BF21E7C70B00F18CB4 /* GuestTableViewCell.swift in Sources */,
 				4DE1BB2321E65F5C00ABEB6D /* DinnerTableViewCell.swift in Sources */,
 				4DE1BB1B21E65CA000ABEB6D /* Dinner.swift in Sources */,
 				4DE1BB2721E6664900ABEB6D /* DinnerEntity.swift in Sources */,
 				4DE1BB1821E65A6100ABEB6D /* MainViewController.swift in Sources */,
 				4DE1BB0521E6587D00ABEB6D /* CenaNavidad.xcdatamodeld in Sources */,
 				4DE1BB1F21E65E1300ABEB6D /* Dish.swift in Sources */,
+				4DA7F4B521E7B77E00F18CB4 /* LocalGuestRepository.swift in Sources */,
+				4DA7F4A721E7AE4F00F18CB4 /* InterViewController.swift in Sources */,
+				4DA7F49821E7982300F18CB4 /* Repository.swift in Sources */,
+				4DA7F4B921E7BD2B00F18CB4 /* AddGuestViewController.swift in Sources */,
+				4DA7F4AD21E7B52400F18CB4 /* GuestsViewController.swift in Sources */,
+				4DA7F49A21E7987500F18CB4 /* LocalDinnerRepository.swift in Sources */,
 				4DE1BB1D21E65D4400ABEB6D /* Guest.swift in Sources */,
+				4DA7F4A221E79F4F00F18CB4 /* AddViewController.swift in Sources */,
 				4DE1BAFD21E6587D00ABEB6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

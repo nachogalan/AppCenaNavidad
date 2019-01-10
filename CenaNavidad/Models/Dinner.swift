@@ -9,9 +9,9 @@
 import Foundation
 
 public class Dinner{
-    var name: String!
-    var guests: [Guest]!
-    var place: String!
-    var date: Date!
-    var dishes: [Dish]!
+    var name: String! = ""
+    var guests: [Guest]! = []
+    var place: String! = ""
+    var date: Date! = Date()
+    var dishes: [Dish]! = []
 }
